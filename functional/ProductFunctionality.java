@@ -7,7 +7,7 @@ import java.util.Comparator;
 import java.util.List;
 
 public abstract class ProductFunctionality {
-    public static List<Product> getProductsOver100(List<Product> products) {
+    public static List<Product> getProductsOver_100_Price(List<Product> products) {
         return products.stream()
                 .filter(x -> x.getCost() > 100 && x.getType().equals("продукты"))
                 .toList();
